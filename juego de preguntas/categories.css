@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc6c6;
+    margin: 50px auto;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    animation-duration: 2s;
+    animation-name: slide;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.contenedor-categorias {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 80px auto;
+}
+
+.contenedor-categorias button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc6c6;
+    border-radius: 5px;
+    background-color: #f1f2f3;
+    transition: all 0.5s ease;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton-jugar {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc6c6;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contenedor-categorias button:hover,
+.boton-jugar:hover {
+    background-color: #ccc6c6;
+}
+
+@keyframes slide {
+    from {
+        margin-left: -200%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .contenedor {
+        width: 80%;
+        padding: 100px 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .contenedor-categorias button {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .boton-jugar {
+        width: 100%;
+        max-width: 415px;
+        padding: 25px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .contenedor {
+        width: 80%;
+    }
+
+    .contenedor-categorias button {
+        width: 100%;
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    .boton-jugar {
+        width: 100%;
+        max-width: 550px;
+        padding: 30px;
+    }
+}

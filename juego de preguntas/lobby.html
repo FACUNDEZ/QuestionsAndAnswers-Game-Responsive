@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="lobby.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>Juego de preguntas y respuestas</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="imagen">
+      <img src="images/undraw_game_day_ucx9.webp" alt="game-image">
+    </div>
+    <button class="boton" id="boton-lobby">EMPIEZA A JUGAR!</button>
+  </div>
+
+</body>
+
+<script>
+  const btnLobby = document.getElementById('boton-lobby')
+
+  btnLobby.addEventListener('click', () => {
+    window.location.href = 'categories.html'
+})
+</script>
+
+</html>
