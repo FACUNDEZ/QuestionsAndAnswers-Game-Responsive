@@ -2,7 +2,7 @@ const btnBack = document.getElementById('boton-lobby')
 const result = document.getElementById('result')
 
 btnBack.addEventListener('click', () => {
-    window.location.href = "lobby.html"
+    window.location.href = "index.html"
 })
 
 let correctAnswers = (parseInt(localStorage.getItem("puntos")) / 5) * 100;
